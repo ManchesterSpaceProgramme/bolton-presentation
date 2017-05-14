@@ -31,6 +31,9 @@
 					<p>
 						<small>By Harvy / <a href="https://twitter.com/mcrspaceprog">@mcrspaceprog</a></small>
 					</p>
+					<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+					</aside>
 				</section>
 
 				<section data-background="img/">
@@ -58,21 +61,20 @@
 						<h2>High Altitude Balloon</h2>
 						<ul class="fragment">
 							<li>First and only flights</li>
-							<li>2 meter diameter at ground level with helium</li>
+							<li>2m diameter at ground level</li>
 							<li>Helium gas</li>
 							<li>Short, high altitude flights</li>
 						</ul>
+						<div class="fragment"><img src="img/hab-diagram.png" width="500px"/></div> 
 					</section>
-					<section data-background="img/payload-stack.jpg">
+					<section data-background="img/hab-payload.jpg" width="1200px">
 						<h2>HAB Payload</h2>
-							<ul class="fragment">
+							<ul class="fragment" data-audio-src="audio/rtty.mp3">
 								<li>1m^3 payload and just under 1kg</li>
 								<li>Transmits on 10mW of power</li>
-								<li>Uses RTTY as radio protocol</li>
+								<li>Uses RTTY (at 300 baud) as radio protocol</li>
+								<li>Carries camera and sensor data</li>
 							</ul>
-							<p class ="fragment" data-audio-src="audio/rtty.mp3">
-								RTTY Audio
-							</p>
 					</section>
 				</section>
                 
@@ -89,45 +91,86 @@
 					</section>
 					<section data-background="img/pico-balloon.jpg">
 						<h2>Pico Balloon</h2>
-							<ul>
+							<ul class="fragment">
 								<li>Party / Foil Balloon</li>
 								<li>Long, low altitude</li>
 								<li>1 - 38 g lift</li>
+								<li>Needs solar power</li>
 							</ul>
 					</section>
 
-					<section data-background="img/pico-payload.jpg">
+					<section data-background="img/pico-payload.jpeg">
 						<h2>Pico Payload</h2>
-							<ul>
-
+							<ul class="fragment">
+								<li>About 20g</li>
+								<li>Draws 60mA</li>
+								<li>Transmits both RTTY and LoRa</li>
+								<li>Extreme budgeting</li>
 							</ul>
 					</section>
 				</section>
 
-				<section data-background="img/droneshot.jpg">
-					<h2>Rocket</h2>
-				        <ul>
-                        <li>Two more launches</li>
-                        <li>Pico balloon</li>
-                        <li>Second payload has more sensors</li> 
-                        <li>Outreach</li>    
-					</ul>
+				<!-- Rockets -->
+				<section>
+					<section data-background="img/backdrop.jpg">
+						<h2>Types of Flight</h2>
+						<ul>
+							<li class="lighter">High Altitude Balloon</li>
+							<li class="lighter">Pico Balloon</li>
+							<li>Rocket</li>
+							<li class="lighter">Setup</li>
+						</ul>
+					</section>
+					<section data-background="img/rocket.jpg">
+						<h2>Rocket</h2>
+							<ul class="fragment">
+								<li>Solid Fuel in differening sizes</li>
+								<li>Low altitude</li>
+								<li></li> 
+								<li></li>    
+						</ul>
+					</section>
+					<section data-background="img/question-mark">
+						<h2>Rocket Payload</h2>
+						<h1>?</h1>
+					</section>
 				</section>
 
-                <section data-background="img/backdrop.jpg">
-					<h2>Recent Launch</h2>
-                    
-					<div>
-                        <div style="float:left;"><img src="img/setup.jpg"  width="250px"/><p>Location : Macclesfield<br />Destination : Hull</p></div>
-                        <div style="float:left;"><img src="img/inflation.jpg" width="250px"/></div>
-                        <div style="float:left;"><img src="img/map.jpg" width="300px"/></div>
-                        <div style="float:left;"><img src="img/touchdown.jpg" width="300px"/></div>                        
-                    </div>
+				<!-- Setup -->
+				<section>
+					<section data-background="img/backdrop.jpg">
+						<h2>Types of Flight</h2>
+						<ul>
+							<li class="lighter">High Altitude Balloon</li>
+							<li class="lighter">Pico Balloon</li>
+							<li class="lighter">Rocket</li>
+							<li>Setup</li>
+						</ul>
+					</section>
+					<section>
+						<div><img src="img/hab.png" width="100%"/></div>  
+					</section>
+					<section>
+						<div><img src="img/yagi.jpg" width="100%"/></div>  
+					</section>
+					<section>
+						<div><img src="img/sdr-dl.png" width="100%"/></div> 
+					</section>
+					<section>
+						<div><img src="img/habhub-tracker.jpg" width="100%"/></div> 
+					</section>
+
 				</section>
 
-				<section data-background="img/moneyshot.jpg" data-background-size="2000px">
+				<section data-background="img/moneyshot.jpg">
 					<h2>Space</h2>
                     <p>The final frontier</p>
+						<ul class="fragment">
+							<li>Hand held trackers</li>
+							<li>Ground station</li>
+							<li>Satellite Tracking</li>
+
+						</ul>
 				</section>
 			</div>
 		</div>
@@ -145,6 +188,7 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }		
 				]
