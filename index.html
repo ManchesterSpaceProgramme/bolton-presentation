@@ -1,24 +1,16 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>MSP - Where we are</title>
+		<title>MSP - Technical</title>
 
-		<meta name="description" content="MSP presentation to Sunday Assembly">
-		<meta name="author" content="Tony Fawl & Harvinder Atwal">
-
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-        <link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Code syntax highlighting -->
+		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
@@ -29,59 +21,86 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
 	</head>
-
 	<body>
-
 		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="img/doge.jpg">
 					<h1>Manchester Space Programme</h1>
 					<h3>Technical</h3>
 					<p>
-				        <small>By Harvy / <a href="https://twitter.com/mcrspaceprog">@mcrspaceprog</a></small>
+						<small>By Harvy / <a href="https://twitter.com/mcrspaceprog">@mcrspaceprog</a></small>
 					</p>
 				</section>
 
-				<section data-background="img/aims.jpg" data-background-size="1600px">
+				<section data-background="img/">
 					<h2>Types of Flight</h2>
                     <ul>
                         <li>High Altitude Balloon</li>
                         <li>Pico Balloon</li>
 						<li>Rocket</li>
+						<li>Setup</li>
 					</ul>
 				</section>
-                
-                <section data-background="img/droneshot.jpg">
-					<h2>High Altitude Balloon</h2>
-				        <ul>
-                        <li>Fabricated our own payloads</li>
-                        <li>Successfully launch and retrieved a HAB</li>
-                        <li>Promoted our project at Maker Faire</li>  
-                        <li>Gained interest from other institutions</li>    
-					</ul>
-				</section>
-                
+
+				<!-- HAB Baloon -->
 				<section>
-					<section data-background="img/droneshot.jpg">
+					<section data-background="img/backdrop.jpg">
+						<h2>Types of Flight</h2>
+						<ul>
+							<li>High Altitude Balloon</li>
+							<li class="lighter">Pico Balloon</li>
+							<li class="lighter">Rocket</li>
+							<li class="lighter">Setup</li>
+						</ul>
+					</section>
+					<section data-background="img/hab-balloon.jpg">
+						<h2>High Altitude Balloon</h2>
+						<ul class="fragment">
+							<li>First and only flights</li>
+							<li>2 meter diameter at ground level with helium</li>
+							<li>Helium gas</li>
+							<li>Short, high altitude flights</li>
+						</ul>
+					</section>
+					<section data-background="img/payload-stack.jpg">
+						<h2>HAB Payload</h2>
+							<ul class="fragment">
+								<li>1m^3 payload and just under 1kg</li>
+								<li>Transmits on 10mW of power</li>
+								<li>Uses RTTY as radio protocol</li>
+							</ul>
+							<p class ="fragment" data-audio-src="audio/rtty.mp3">
+								RTTY Audio
+							</p>
+					</section>
+				</section>
+                
+				<!-- Pico Balloon -->
+				<section>
+					<section data-background="img/backdrop.jpg">
+						<h2>Types of Flight</h2>
+						<ul>
+							<li class="lighter">High Altitude Balloon</li>
+							<li>Pico Balloon</li>
+							<li class="lighter">Rocket</li>
+							<li class="lighter">Setup</li>
+						</ul>
+					</section>
+					<section data-background="img/pico-balloon.jpg">
 						<h2>Pico Balloon</h2>
 							<ul>
-							<li>Two more launches</li>
-							<li>Pico balloon</li>
-							<li>Second payload has more sensors</li> 
-							<li>Outreach</li>    
-						</ul>
-
+								<li>Party / Foil Balloon</li>
+								<li>Long, low altitude</li>
+								<li>1 - 38 g lift</li>
+							</ul>
 					</section>
 
-					<section data-background="img/droneshot.jpg">
+					<section data-background="img/pico-payload.jpg">
+						<h2>Pico Payload</h2>
+							<ul>
 
+							</ul>
 					</section>
 				</section>
 
@@ -94,7 +113,7 @@
                         <li>Outreach</li>    
 					</ul>
 				</section>
-                
+
                 <section data-background="img/backdrop.jpg">
 					<h2>Recent Launch</h2>
                     
@@ -105,43 +124,31 @@
                         <div style="float:left;"><img src="img/touchdown.jpg" width="300px"/></div>                        
                     </div>
 				</section>
-                
-                <section data-background="img/moneyshot.jpg" data-background-size="2000px">
+
+				<section data-background="img/moneyshot.jpg" data-background-size="2000px">
 					<h2>Space</h2>
                     <p>The final frontier</p>
 				</section>
-                
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
+				transition: 'convex',
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }		
 				]
 			});
-
 		</script>
-
 	</body>
 </html>
