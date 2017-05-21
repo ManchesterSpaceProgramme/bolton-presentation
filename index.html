@@ -82,15 +82,12 @@
 					</section>
 					<section data-background="img/hab-payload.jpg" width="1200px">
 						<h2>HAB Payload</h2>
-							<ul class="fragment" data-audio-src="audio/rtty.mp3">
+							<ul class="fragment">
 								<li>1m^3 payload and 750g</li>
 								<li>Transmits on 10mW of power</li>
 								<li>Uses RTTY (at 300 baud) as radio protocol</li>
 								<li>Carries camera and sensor data</li>
 							</ul>
-							<aside class="notes">
-								Play audio
-							</aside> 
 					</section>
 				</section>
                 
@@ -187,6 +184,10 @@
 						</aside> 
 					</section>
 					<section>
+						<div><img src="img/sdr-dl.png" width="100%"/></div> 
+						<audio data-autoplay src="audio/rtty.mp3"></audio>
+					</section>
+					<section>
 						<div><img src="img/habhub-tracker.jpg" width="100%"/></div> 
 						<aside class="notes">
 							Explain each part of the map and the value of community receivers
@@ -227,8 +228,11 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }		
-				]
+					//{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/gamepad/gamepad.js', async: true }
+				],
+				keyboard: { 
+					82: function() { Recorder.toggleRecording(); }}
 			});
 		</script>
 	</body>
